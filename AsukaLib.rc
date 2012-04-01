@@ -1,0 +1,201 @@
+// Microsoft Visual C++ generated resource script.
+//
+#include "resource.h"
+
+#define APSTUDIO_READONLY_SYMBOLS
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 2 resource.
+//
+#include "afxres.h"
+
+/////////////////////////////////////////////////////////////////////////////
+#undef APSTUDIO_READONLY_SYMBOLS
+
+/////////////////////////////////////////////////////////////////////////////
+// 日本語 resources
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_JPN)
+#ifdef _WIN32
+LANGUAGE LANG_JAPANESE, SUBLANG_DEFAULT
+#pragma code_page(932)
+#endif //_WIN32
+
+#ifdef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// TEXTINCLUDE
+//
+
+1 TEXTINCLUDE 
+BEGIN
+    "resource.h\0"
+END
+
+2 TEXTINCLUDE 
+BEGIN
+    "#include ""afxres.h""\r\n"
+    "\0"
+END
+
+3 TEXTINCLUDE 
+BEGIN
+    "\r\n"
+    "\0"
+END
+
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Version
+//
+
+VS_VERSION_INFO VERSIONINFO
+ FILEVERSION 0,0,8,0
+ PRODUCTVERSION 0,0,8,0
+ FILEFLAGSMASK 0x17L
+#ifdef _DEBUG
+ FILEFLAGS 0x1L
+#else
+ FILEFLAGS 0x0L
+#endif
+ FILEOS 0x4L
+ FILETYPE 0x2L
+ FILESUBTYPE 0x0L
+BEGIN
+    BLOCK "StringFileInfo"
+    BEGIN
+        BLOCK "041104b0"
+        BEGIN
+            VALUE "FileDescription", "風来のシレン外伝 女剣士アスカ見参！ プレイ環境改善ツール"
+            VALUE "FileVersion", "0, 0, 8, 0"
+            VALUE "InternalName", "WasaBeef"
+            VALUE "LegalCopyright", "naka2"
+            VALUE "OriginalFilename", "AsukaLib.dll"
+            VALUE "ProductName", "AsukaLib"
+            VALUE "ProductVersion", "0, 0, 8, 0"
+        END
+    END
+    BLOCK "VarFileInfo"
+    BEGIN
+        VALUE "Translation", 0x411, 1200
+    END
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Menu
+//
+
+ID_POPUPMENU MENU 
+BEGIN
+    POPUP "Dummy"
+    BEGIN
+        MENUITEM "環境設定",                    IDM_CONFIG
+        MENUITEM SEPARATOR
+        MENUITEM "設定ロック",                  IDM_LOCK_CONFIG
+        MENUITEM SEPARATOR
+        MENUITEM "BGM ミュート",                IDM_MUTE_BGM
+        MENUITEM "SE ミュート",                 IDM_MUTE_SE
+        MENUITEM SEPARATOR
+        POPUP "ウィンドウ制御"
+        BEGIN
+            MENUITEM "リサイズ可能にする",          IDM_RESIZABLE
+            MENUITEM "アスペクト比固定でリサイズする", IDM_HOLDASPECTRATIO
+            MENUITEM SEPARATOR
+            POPUP "既定のサイズ"
+            BEGIN
+                MENUITEM " 640x480",                    IDM_SIZE_640
+                MENUITEM " 800x600",                    IDM_SIZE_800
+                MENUITEM " 960x720",                    IDM_SIZE_960
+            END
+            POPUP "既定の位置"
+            BEGIN
+                MENUITEM "左上端",                      IDM_LOC_LEFTTOP
+                MENUITEM "左下端",                      IDM_LOC_LEFTBOTTOM
+                MENUITEM "右上端",                      IDM_LOC_RIGHTTOP
+                MENUITEM "右下端",                      IDM_LOC_RIGHTBOTTOM
+                MENUITEM "画面中央",                    IDM_LOC_CENTER
+            END
+        END
+    END
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Dialog
+//
+
+IDD_CONFIG DIALOGEX 0, 0, 211, 188
+STYLE DS_SETFONT | DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "AsukaLib 環境設定"
+FONT 8, "Arial", 400, 0, 0x0
+BEGIN
+    DEFPUSHBUTTON   "OK",IDB_APPLY,96,167,50,14
+    PUSHBUTTON      "Cancel",IDB_CANCEL,154,167,50,14,0,WS_EX_ACCEPTFILES
+    CTEXT           "null",IDL_PRIORITY,7,19,35,8,SS_CENTERIMAGE
+    LTEXT           "プロセスの優先度",IDL_STATIC_001,7,7,112,8,
+                    SS_CENTERIMAGE
+    LTEXT           "プロセス　ウェイト",IDL_STATIC_002,7,33,112,8,
+                    SS_CENTERIMAGE
+    CONTROL         "",IDSL_WAIT,"msctls_trackbar32",TBS_BOTH | TBS_NOTICKS | 
+                    WS_TABSTOP,41,43,163,12
+    CONTROL         "",IDSL_PRIORITY,"msctls_trackbar32",TBS_BOTH | 
+                    TBS_NOTICKS | WS_TABSTOP,41,17,163,12
+    CTEXT           "0",IDL_WAIT,7,44,35,8,SS_CENTERIMAGE
+    LTEXT           "BGM ボリューム",IDL_STATIC_003,7,58,112,8,
+                    SS_CENTERIMAGE
+    CTEXT           "0",IDL_BGM_VOLUME,7,69,35,8,SS_CENTERIMAGE
+    CONTROL         "",IDSL_BGM_VOLUME,"msctls_trackbar32",TBS_BOTH | 
+                    TBS_NOTICKS | WS_TABSTOP,41,68,163,12
+    CONTROL         "非アクティブ時でも描画を継続する",IDC_ENABLEDRAW,"Button",
+                    BS_AUTOCHECKBOX | WS_TABSTOP,7,115,197,13
+    CONTROL         "非アクティブ時でもサウンドを継続する",IDC_ENABLESOUND,
+                    "Button",BS_AUTOCHECKBOX | WS_TABSTOP,7,130,197,13
+    LTEXT           "SE ボリューム",IDL_STATIC_004,7,82,112,8,SS_CENTERIMAGE
+    CTEXT           "0",IDL_SE_VOLUME,7,93,35,8,SS_CENTERIMAGE
+    CONTROL         "",IDSL_SE_VOLUME,"msctls_trackbar32",TBS_BOTH | 
+                    TBS_NOTICKS | WS_TABSTOP,41,92,163,12
+    CONTROL         "ウィンドウサイズと位置の設定を保存する",
+                    IDC_SAVEWINDOWSET,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,
+                    7,145,197,13
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// DESIGNINFO
+//
+
+#ifdef APSTUDIO_INVOKED
+GUIDELINES DESIGNINFO 
+BEGIN
+    IDD_CONFIG, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 204
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 181
+    END
+END
+#endif    // APSTUDIO_INVOKED
+
+#endif    // 日本語 resources
+/////////////////////////////////////////////////////////////////////////////
+
+
+
+#ifndef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 3 resource.
+//
+
+
+/////////////////////////////////////////////////////////////////////////////
+#endif    // not APSTUDIO_INVOKED
+

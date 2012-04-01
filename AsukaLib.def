@@ -1,0 +1,3 @@
+LIBRARY	AsukaLib
+EXPORTS
+		Direct3DCreate8		@1

@@ -1,0 +1,82 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="Sources">
+      <UniqueIdentifier>{4FC737F1-C7A5-4376-A066-2A32D752A2FF}</UniqueIdentifier>
+      <Extensions>cpp;c;cxx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
+    </Filter>
+    <Filter Include="Headers">
+      <UniqueIdentifier>{93995380-89BD-4b04-88EB-625FBE52EBFB}</UniqueIdentifier>
+      <Extensions>h;hpp;hxx;hm;inl;inc;xsd</Extensions>
+    </Filter>
+    <Filter Include="Resources">
+      <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
+      <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx</Extensions>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="AsukaLib.cpp">
+      <Filter>Sources</Filter>
+    </ClCompile>
+    <ClCompile Include="SoundBuffer.cpp">
+      <Filter>Sources</Filter>
+    </ClCompile>
+    <ClCompile Include="IniUtil.cpp">
+      <Filter>Sources</Filter>
+    </ClCompile>
+    <ClCompile Include="HookD3d.cpp">
+      <Filter>Sources</Filter>
+    </ClCompile>
+    <ClCompile Include="HookDinput.cpp">
+      <Filter>Sources</Filter>
+    </ClCompile>
+    <ClCompile Include="HookDsound.cpp">
+      <Filter>Sources</Filter>
+    </ClCompile>
+    <ClCompile Include="HookUtil.cpp">
+      <Filter>Sources</Filter>
+    </ClCompile>
+    <ClCompile Include="DbgUtil.cpp">
+      <Filter>Sources</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="AsukaLib.h">
+      <Filter>Headers</Filter>
+    </ClInclude>
+    <ClInclude Include="DbgUtil.h">
+      <Filter>Headers</Filter>
+    </ClInclude>
+    <ClInclude Include="IniUtil.h">
+      <Filter>Headers</Filter>
+    </ClInclude>
+    <ClInclude Include="SoundBuffer.h">
+      <Filter>Headers</Filter>
+    </ClInclude>
+    <ClInclude Include="d3d8def.h">
+      <Filter>Headers</Filter>
+    </ClInclude>
+    <ClInclude Include="HookD3d.h">
+      <Filter>Headers</Filter>
+    </ClInclude>
+    <ClInclude Include="HookDinput.h">
+      <Filter>Headers</Filter>
+    </ClInclude>
+    <ClInclude Include="HookDsound.h">
+      <Filter>Headers</Filter>
+    </ClInclude>
+    <ClInclude Include="resource.h">
+      <Filter>Resources</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <ResourceCompile Include="AsukaLib.rc">
+      <Filter>Resources</Filter>
+    </ResourceCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="AsukaLib.def">
+      <Filter>Resources</Filter>
+    </None>
+  </ItemGroup>
+</Project>
